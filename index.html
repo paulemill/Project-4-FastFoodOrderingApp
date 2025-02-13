@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fast Food Ordering App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header_photo"><img src="Photos/header.jpeg" /></div>
+      </header>
+
+      <div class="content">
+        <nav class="category">
+          <div class="category_burger">
+            <img src="Photos/category_burger.jpg" />
+          </div>
+          <div class="category_chicken">
+            <img src="Photos/category_chicken.jpg" />
+          </div>
+          <div class="category_dessert">
+            <img src="Photos/category_dessert.jpg" />
+          </div>
+        </nav>
+
+        <main class="main">
+          <!-- BURGERS -->
+          <div class="burgers hidden">
+            <div class="product_container">
+              <div class="product_image">
+                <img src="Photos/burger_burgermcdo.jpg" />
+              </div>
+              <div class="product_name">
+                <p>Burger Mcdo</p>
+              </div>
+              <div class="product_price_cart">
+                <p>Php <span class="burger_mcdo_price">60</span></p>
+                <img
+                  src="Photos/add_to_cart.png"
+                  class="cart_image"
+                  data-price="60"
+                  data-name="Burger Mcdo"
+                />
+              </div>
+            </div>
+
+            <div class="product_container">
+              <div class="product_image">
+                <img src="Photos/burger_doublecheeseburger.jpg" />
+              </div>
+              <div class="product_name">
+                <p>Double CheeseBurger</p>
+              </div>
+              <div class="product_price_cart">
+                <p>Php <span class="cheese_burger_price">130</span></p>
+                <img
+                  src="Photos/add_to_cart.png"
+                  class="cart_image"
+                  data-price="130"
+                  data-name="Double CheeseBurger"
+                />
+              </div>
+            </div>
+
+            <div class="product_container">
+              <div class="product_image">
+                <img src="Photos/burger_bigmac.jpg" />
+              </div>
+              <div class="product_name">
+                <p>Burger BigMac</p>
+              </div>
+              <div class="product_price_cart">
+                <p>Php <span class="bigmac_price">180</span></p>
+                <img
+                  src="Photos/add_to_cart.png"
+                  class="cart_image"
+                  data-price="180"
+                  data-name="Burger BigMac"
+                />
+              </div>
+            </div>
+
+            <div class="product_container">
+              <div class="product_image">
+                <img src="Photos/burger_chickensandwich.jpg" />
+              </div>
+              <div class="product_name">
+                <p>Chk Sandwich</p>
+              </div>
+              <div class="product_price_cart">
+                <p>Php <span class="chicken_sandwich_price">90</span></p>
+                <img
+                  src="Photos/add_to_cart.png"
+                  class="cart_image"
+                  data-price="90"
+                  data-name="Chicken Sandwich"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- CHICKENS -->
+          <div class="chickens hidden">
+            <div class="product_container">
+              <div class="product_image">
+                <img src="Photos/chicken_chickenrice.jpg" />
+              </div>
+              <div class="product_name">
+                <p>1pc. Chicken Mcdo</p>
+              </div>
+              <div class="product_price_cart">
+                <p>Php <span class="chickenrice_price">120</span></p>
+                <img
+                  src="Photos/add_to_cart.png"
+                  class="cart_image"
+                  data-price="120"
+                  data-name="Chicken Mcdo"
+                />
+              </div>
+            </div>
+
+            <div class="product_container">
+              <div class="product_image">
+                <img src="Photos/chicken_nuggets.jpg" />
+              </div>
+              <div class="product_name">
+                <p>Chicken McNuggets</p>
+              </div>
+              <div class="product_price_cart">
+                <p>Php <span class="nuggets_price">140</span></p>
+                <img
+                  src="Photos/add_to_cart.png"
+                  class="cart_image"
+                  data-price="140"
+                  data-name="Chicken McNuggets"
+                />
+              </div>
+            </div>
+
+            <div class="product_container">
+              <div class="product_image">
+                <img src="Photos/chicken_pasta.jpg" />
+              </div>
+              <div class="product_name">
+                <p>Chicken Spag</p>
+              </div>
+              <div class="product_price_cart">
+                <p>Php <span class="chickenspag_price">180</span></p>
+                <img
+                  src="Photos/add_to_cart.png"
+                  class="cart_image"
+                  data-price="180"
+                  data-name="Chicken Spaghetti"
+                />
+              </div>
+            </div>
+
+            <div class="product_container">
+              <div class="product_image">
+                <img src="Photos/chicken_fillet.jpg" />
+              </div>
+              <div class="product_name">
+                <p>Chicken Fillet</p>
+              </div>
+              <div class="product_price_cart">
+                <p>Php <span class="chickenfillet_price">100</span></p>
+                <img
+                  src="Photos/add_to_cart.png"
+                  class="cart_image"
+                  data-price="100"
+                  data-name="Chicken Fillet"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- DESSERT -->
+          <div class="desserts hidden">
+            <div class="product_container">
+              <div class="product_image">
+                <img src="Photos/dessert_coke.jpg" />
+              </div>
+              <div class="product_name">
+                <p>Coke</p>
+              </div>
+              <div class="product_price_cart">
+                <p>Php <span class="coke_price">30</span></p>
+                <img
+                  src="Photos/add_to_cart.png"
+                  class="cart_image"
+                  data-price="30"
+                  data-name="Coke"
+                />
+              </div>
+            </div>
+
+            <div class="product_container">
+              <div class="product_image">
+                <img src="Photos/dessert_cokefloat.jpg" />
+              </div>
+              <div class="product_name">
+                <p>Coke McFloat</p>
+              </div>
+              <div class="product_price_cart">
+                <p>Php <span class="float_price">60</span></p>
+                <img
+                  src="Photos/add_to_cart.png"
+                  class="cart_image"
+                  data-price="60"
+                  data-name="Coke McFloat"
+                />
+              </div>
+            </div>
+
+            <div class="product_container">
+              <div class="product_image">
+                <img src="Photos/dessert_sundae.jpg" />
+              </div>
+              <div class="product_name">
+                <p>Choco Sundae</p>
+              </div>
+              <div class="product_price_cart">
+                <p>Php <span class="sundae_price">45</span></p>
+                <img
+                  src="Photos/add_to_cart.png"
+                  class="cart_image"
+                  data-price="45"
+                  data-name="Choco Sundae"
+                />
+              </div>
+            </div>
+
+            <div class="product_container">
+              <div class="product_image">
+                <img src="Photos/dessert_mcflurry.jpg" />
+              </div>
+              <div class="product_name">
+                <p>McFlurry</p>
+              </div>
+              <div class="product_price_cart">
+                <p>Php <span class="flurry_price">60</span></p>
+                <img
+                  src="Photos/add_to_cart.png"
+                  class="cart_image"
+                  data-price="60"
+                  data-name="McFlurry"
+                />
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <footer class="footer">
+        <div class="order_summary hidden"></div>
+        <div class="order_total_amount">
+          <div class="items">0 items on the list</div>
+          <div class="total">Total Amount:</div>
+        </div>
+        <div class="button_container">
+          <div class="orderList"><button>View Order List</button></div>
+          <div class="checkout_btn"><button>Checkout</button></div>
+          <div class="cancel_btn"><button>Cancel Order</button></div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

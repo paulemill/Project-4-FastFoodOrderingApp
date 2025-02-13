@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0.5, 0.5);
+}
+
+header {
+  height: 100px;
+}
+
+.header_photo img {
+  height: 100px;
+  width: 700px;
+}
+
+nav {
+  border: 1px solid black;
+  width: 200px;
+  height: 550px;
+}
+
+main {
+  border: 1px solid black;
+  width: 500px;
+  height: 550px;
+}
+
+footer {
+  border: 1px solid black;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .category img {
+  height: 150px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.product_container {
+  display: block;
+  width: 230px;
+  height: 250px;
+  padding-top: 10px;
+  border: 3px solid gainsboro;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.product_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.product_image img {
+  width: 150px;
+}
+
+.product_price_cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart_image {
+  width: 40px;
+  margin-right: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.cart_image:active {
+  transform: scale(0.9);
+  filter: brightness(0.8);
+}
+
+p {
+  margin-left: 40px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.burgers,
+.chickens,
+.desserts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.order_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+  margin-left: 50px;
+}
+
+.order_name,
+.total,
+.order_price {
+  font-weight: bold;
+}
+
+.order_total_amount {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 40px 10px 260px;
+  font-size: 20px;
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.orderList button {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.checkout_btn button {
+  background-color: #008cba; /* Blue */
+  color: white;
+}
+
+.cancel_btn button {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+button:active {
+  transform: scale(0.95);
+}
